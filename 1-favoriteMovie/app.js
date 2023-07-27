@@ -1,35 +1,36 @@
-//DOM manipulation()
+//DOM manipulation
+
+/*
+//1.STYLING ELEMENTS
+
+//inline syling with JS
+const title = document.querySelector('#main-heading');
+
+title.style.color = 'red';
 
 
-//GetElementById()
-const title = document.getElementById('main-heading');
+//styling multiple elements
+const listItems = document.querySelectorAll('.list-items');
 
-console.log(title);
+for(i=0; i < listItems.length; i++){
+    listItems[i].style.fontSize = '3rem';
+}
+*/
 
+//2.CREATING ELEMENTS
 
-//GetElementByClassName()
+const ul = document.querySelector('ul');
 
-const listItem = document.getElementsByClassName('list-items');
+const li = document.createElement('li');
 
-console.log(listItem);
+//adding elements
 
+ul.append(li); 
 
+//modifying the text
 
-//GetElementByTagName()
-const listItem2 = document.getElementsByTagName('li');
+const firstListItem = document.querySelector('.list-items');
 
-console.log(listItem2);
-
-
-//querySelector()
-
-const container = document.querySelector('div');
-
-console.log(container);
-
-
-//querySelectorAll()
-
-const containerAll = document.querySelectorAll('div');
-
-console.log(containerAll);
+console.log(firstListItem.innerText);
+console.log(firstListItem.textContent);
+console.log(firstListItem.innerHTML);
