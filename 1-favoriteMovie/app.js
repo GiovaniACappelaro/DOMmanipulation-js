@@ -18,19 +18,19 @@ for(i=0; i < listItems.length; i++){
 */
 
 //2.CREATING ELEMENTS
-
 const ul = document.querySelector('ul');
 
 const li = document.createElement('li');
 
-//adding elements
-
+//3.ADDING ELEMENTS
 ul.append(li); 
 
-//modifying the text
+//4.MODIFYING ELEMENTS TEXT
+li.innerText = 'X-men' ;
 
-const firstListItem = document.querySelector('.list-items');
+//5.MODIFYING ATRIBUTES & CLASSES
+li.setAttribute('id', 'main-heading');
+li.removeAttribute('id');
 
-console.log(firstListItem.innerText);
-console.log(firstListItem.textContent);
-console.log(firstListItem.innerHTML);
+const title = document.querySelector('#main-heading');
+console.log(title.getAttribute('id'));
