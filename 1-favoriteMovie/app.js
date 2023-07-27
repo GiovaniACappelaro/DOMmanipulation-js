@@ -29,8 +29,4 @@ ul.append(li);
 li.innerText = 'X-men' ;
 
 //5.MODIFYING ATRIBUTES & CLASSES
-li.setAttribute('id', 'main-heading');
-li.removeAttribute('id');
-
-const title = document.querySelector('#main-heading');
-console.log(title.getAttribute('id'));
+li.classList.add('list-items');
