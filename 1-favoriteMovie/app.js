@@ -30,3 +30,6 @@ li.innerText = 'X-men' ;
 
 //5.MODIFYING ATRIBUTES & CLASSES
 li.classList.add('list-items');
+
+//REMOVE ELEMENTS
+li.remove();
