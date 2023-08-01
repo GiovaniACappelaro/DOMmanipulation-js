@@ -27,10 +27,18 @@ ul.childNodes[1].style.backgroundColor = "blue"; */
 
 //Pegar apenas elementos filhos (editáveis)
 
-console.log(ul.children);
+/*console.log(ul.children);
 console.log(ul.firstElementChild);
-console.log(ul.lastElementChild);
+console.log(ul.lastElementChild); */
 
 
 //SIBLING NODE TRAVERSAL
+const div = document.querySelector('div');
+
+console.log(div.childNodes);
+
+console.log(ul.previousSibling);
+console.log(ul.nextSibling);
+
+//anotação: node considera 'tudo', element considera os elementos em si (sem text por ex)
 
