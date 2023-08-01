@@ -19,4 +19,18 @@ console.log(html.parentElement);
 
 //CHILD NODE TRAVERSAL
 
+/*console.log(ul.childNodes);
+console.log(ul.firstChild);
+console.log(ul.lastChild);
+
+ul.childNodes[1].style.backgroundColor = "blue"; */
+
+//Pegar apenas elementos filhos (editáveis)
+
+console.log(ul.children);
+console.log(ul.firstElementChild);
+console.log(ul.lastElementChild);
+
+
+//SIBLING NODE TRAVERSAL
 
