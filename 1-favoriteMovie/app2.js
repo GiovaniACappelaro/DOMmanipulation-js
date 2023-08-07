@@ -35,10 +35,12 @@ console.log(ul.lastElementChild); */
 //SIBLING NODE TRAVERSAL
 const div = document.querySelector('div');
 
-console.log(div.childNodes);
+/*console.log(div.childNodes);
 
 console.log(ul.previousSibling);
-console.log(ul.nextSibling);
+console.log(ul.nextSibling); */
 
 //anotação: node considera 'tudo', element considera os elementos em si (sem text por ex)
 
+console.log(ul.previousElementSibling);
+console.log(ul.nextElementSibling);
