@@ -45,6 +45,7 @@ body{
     justify-content: space-between;
     align-items: center;
     font-weight: 600;
+    box-shadow: 7px 7px 15px 5px #050516;
 }
 
 h1{
@@ -57,10 +58,17 @@ h1{
 button{
     border: 3px solid #f3efef;
     background: linear-gradient(#03031a, #141453, #1c1c5f, #111169, #1212cb); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     padding: 1.2rem 2rem;
     border-radius: 12px;
     color: #f3efef;
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 0.8rem;
+}
+
+button:hover{
+    box-shadow: 1px 1px 10px 1px #cdcdf4;
+    cursor: pointer;
 }
