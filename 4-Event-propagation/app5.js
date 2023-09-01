@@ -4,20 +4,21 @@
 
 window.addEventListener('click', function(){
     console.log('window');
-}, false);
+}, true);
 
 document.addEventListener('click', function(){
     console.log('document');
-}, false);
+}, true);
 
-document.querySelector('.div2').addEventListener('click', function(){
+document.querySelector('.div2').addEventListener('click', function(e){
+    e.stopPropagation();
     console.log('DIV 2');
-}, false);
+}, true);
 
 document.querySelector('.div1').addEventListener('click', function(){
     console.log('DIV 1');
-}, false);
+}, true);
 
 document.querySelector('button').addEventListener('click', function(e){
     console.log(e.target.innerText = 'clicked!');
-}, false);
+}, true);
