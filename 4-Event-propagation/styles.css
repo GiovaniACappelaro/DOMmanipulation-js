@@ -33,11 +33,13 @@ body{
     border-radius: 5px;
 }
 
-button{
+.button{
     background-color: transparent;
     border: 3px solid #ffffff;
     border-radius: 5px;
     color: #ffffff;
     padding: 1rem;
     font-size: 3rem;
+    cursor: pointer;
+    display: block;
 }
