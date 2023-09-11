@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(#03031a, #141453, #1c1c5f, #111169, #1212cb); 
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: #ffffff;
+    border: 10px solid #ffffff;
+    margin: 0;
+}
+
+#sports{
+    border: 7px solid #ffffff;
+    padding: 5rem;
+    font-size: 4rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+li{
+    border: 0.2rem solid #ffffff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    list-style-type: none; /*remove bullet */
+}
+
+li:hover{
+    cursor: pointer;
+}
