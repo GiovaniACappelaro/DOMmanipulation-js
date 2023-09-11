@@ -7,52 +7,18 @@ to a parent element that adds it to all of its present
 AND future descendants that match a selector
 */
 
-document.querySelector('#football').addEventListener('click', function(e){
-    console.log('Football is clicked');
+document.querySelector("#sports").addEventListener('click', function(e){
+    console.log(e.target.getAttribute('id') + ' is clicked');
 
     const target = e.target;
 
     if(target.matches('li')){
         target.style.backgroundColor = '#D3D3D3';
     }
-});
 
-document.querySelector('#basketball').addEventListener('click', function(e){
-    console.log('basketball is clicked');
+})
 
-    const target = e.target;
 
-    if(target.matches('li')){
-        target.style.backgroundColor = '#D3D3D3';
-    }
-});
+/*Com delegation, podemos atribuir o listener ao elemento pai (UL) e
+espalhar para os filhos (LI) a partir do bubbling */
 
-document.querySelector('#boxing').addEventListener('click', function(e){
-    console.log('boxing is clicked');
-
-    const target = e.target;
-
-    if(target.matches('li')){
-        target.style.backgroundColor = '#D3D3D3';
-    }
-});
-
-document.querySelector('#tennis').addEventListener('click', function(e){
-    console.log('tennis is clicked');
-
-    const target = e.target;
-
-    if(target.matches('li')){
-        target.style.backgroundColor = '#D3D3D3';
-    }
-});
-
-document.querySelector('#golf').addEventListener('click', function(e){
-    console.log('golf is clicked');
-
-    const target = e.target;
-
-    if(target.matches('li')){
-        target.style.backgroundColor = '#D3D3D3';
-    }
-});
