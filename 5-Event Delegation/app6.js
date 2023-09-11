@@ -18,7 +18,14 @@ document.querySelector("#sports").addEventListener('click', function(e){
 
 })
 
-
-/*Com delegation, podemos atribuir o listener ao elemento pai (UL) e
+/* -> Com delegation, podemos atribuir o listener ao elemento pai (UL) e
 espalhar para os filhos (LI) a partir do bubbling */
 
+//Add new element to the UL
+const sports = document.querySelector('#sports');
+const newSport = document.createElement('li');
+
+newSport.innerText = 'rugby';
+newSport.setAttribute('id', 'rugby');
+
+sports.appendChild(newSport);
