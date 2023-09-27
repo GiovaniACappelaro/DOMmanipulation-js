@@ -24,3 +24,31 @@ body{
     margin-bottom: 30px;
     text-align: center;
 }
+
+.accordion .content-container .question{
+    padding: 18px 0px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #000;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.accordion .content-container .question::after{
+    content: '+';
+
+    position: absolute;
+    right: -5px;
+}
+
+.accordion .content-container .answer{
+    padding-top: 15px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    width: 100%;
+
+    height: 0px;        /*makes anwer text get inside the conainer*/
+    overflow: hidden;   /*hides the leaking content due to lack of space*/
+
+    transition: .5s;    
+}
