@@ -47,8 +47,29 @@ body{
     line-height: 1.5;
     width: 100%;
 
-    height: 0px;        /*makes anwer text get inside the conainer*/
+    height: 0px;        /*makes anwer text get inside the conainer ('desapear')*/
     overflow: hidden;   /*hides the leaking content due to lack of space*/
 
     transition: .5s;    
 }
+
+/*Javascript styling link */
+
+.accordion .content-container.active .answer{
+    height: 150px;
+}
+
+
+.accordion .content-container.active .question{
+    font-size: 1.2rem;
+    transition: .5s;
+}
+
+.accordion .content-container.active .question::after{
+    content: '-';
+    font-size: 1.6rem;
+    transition: .5s;
+}
+
+
+/*the 'active' class is set by the classList toggle with JS */
